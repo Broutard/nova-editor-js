@@ -1,0 +1,19 @@
+{
+    "time": 1570309537000,
+    "blocks": [
+        {
+            "type": "image",
+            "data": {
+                "file": {
+                    "path": "folder/1/1/@/image.jpg",
+                    "url": "http://static.domain.com/folder/1/1/@/image.jpg",
+                    "caption": "image caption",
+                    "withBorder": false,
+                    "stretched": false,
+                    "withBackground": false
+                }
+            }
+        }
+    ],
+    "version": "2.15.0"
+}

@@ -1,0 +1,49 @@
+{
+    "name": "broutard/nova-editor-js",
+    "description": "A Laravel Nova field bringing EditorJs magic to Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "editor",
+        "editorjs",
+        "wysiwyg"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*",
+        "laravel/framework": "^7.0 || ^8.0",
+        "laravel/nova": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0 || ^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Broutard\\NovaEditorJs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Broutard\\NovaEditorJs\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ]
+}
