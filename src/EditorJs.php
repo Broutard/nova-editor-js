@@ -120,7 +120,7 @@ class EditorJs
 
         $value['blocks'] = $this->getBlocks()->map(function($block) {
             // EditorJs require file.url to display the image
-            if ($block['type'] === 'image' && $path = Arr::get($block, 'data.file.path') && !Arr::get($block, 'data.file.url')) {
+            if ($block['type'] === 'image' && ($path = Arr::get($block, 'data.file.path')) && !Arr::get($block, 'data.file.url')) {
                 $url = Storage::disk(config('nova-editor-js.toolSettings.image.disk'))->url($path);
                 $block['data']['file']['url'] = $url;
             }
